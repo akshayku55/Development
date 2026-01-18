@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+    <p>Rock paper Scissors</p>
+    <button onclick="
+      comp = Math.random()*3;
+      comp = Math.floor(comp+1);
+      console.log(comp);
+      inpt = 'r'
+      if(inpt=='r' && comp == 2){
+           alert(`You lost computer: paper`);
+        }
+        else if(inpt == 'r' && comp == 1){
+            alert(`Draw computer chose rock`);
+        }
+        else if(inpt == 'r' && comp == 3){
+            alert(`You won computer chose scissor`)
+        }
+    ">Rock</button>
+    <button onclick="
+     comp = Math.random()*3;
+      comp = Math.ceil(comp);
+      console.log(comp);
+     inpt = 'p';
+      if(inpt == 'p' && comp == 1){
+            alert(`You won computer chose rock`);
+        }
+        else if(inpt == 'p' && comp == 2){
+            alert(`Draw computer chose paper`);
+        }
+         else if(inpt == 'p' && comp == 3){
+            alert(`you lost computer chose scissor`);
+            
+        }
+    ">Paper</button>
+    <button onclick="
+      comp = Math.random()*3;
+      comp = Math.ceil(comp);
+      console.log(comp);
+      inpt = 's';
+      if(inpt == 's' && comp == 1){
+            alert(`You lost computer chose rock`);
+        }
+        else if(inpt == 's' && comp == 2){
+            alert(`you won computer chose paper`);
+        }
+         else if(inpt == 's' && comp == 3){
+            alert(`draw`);
+        }
+    ">Scissors</button>
+    <script>
+        let inpt = '';
+        let comp = '';
+    
+    </script>
+</body>
+</html>
